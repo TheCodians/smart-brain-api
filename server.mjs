@@ -23,7 +23,7 @@ const db = knex({
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors.json());
 
 app.get("/", (req, res) => {
   res.send("it is working fine");
