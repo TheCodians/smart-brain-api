@@ -3,8 +3,8 @@ import bcrypt from "bcrypt-nodejs";
 import cors from "cors";
 import knex from "knex";
 
-import signin from "./controllers/signin.js";
 import register from "./controllers/register.js";
+import signin from "./controllers/signin.js";
 import profile from "./controllers/profile.js";
 import image from "./controllers/image.js";
 
@@ -15,6 +15,7 @@ const db = knex({
   connection: {
     connectionString: process.env.DATABASE_URL,
     ssl: {
+      ssl: true,
       rejectUnauthorized: false,
     },
   },
@@ -26,7 +27,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.json("it is working fine");
+  res.send("it is working fine");
 });
 app.post("/signin", signin.handleSignin(db, bcrypt));
 app.post("/register", (req, res) => {
