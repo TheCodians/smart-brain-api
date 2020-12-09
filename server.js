@@ -8,6 +8,11 @@ import knex from "knex";
 //mport profile from "./controllers/profile.js";
 //import image from "./controllers/image.js";
 
+const express = require('express');
+const bcrypt = require('bcrypt');
+const cors = require('cors');
+const knex = require('knex');
+
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
