@@ -3,19 +3,20 @@ import bcrypt from "bcrypt-nodejs";
 import cors from "cors";
 import knex from "knex";
 
-// import register from "./controllers/register.js";
-// import signin from "./controllers/signin.js";
-// import profile from "./controllers/profile.js";
-// import image from "./controllers/image.js";
+import register from "./controllers/register.js";
+import signin from "./controllers/signin.js";
+import profile from "./controllers/profile.js";
+import image from "./controllers/image.js";
+
 // const express = require('express');
 // const bcrypt = require('bcrypt');
 // const cors = require('cors');
 // const knex = require('knex');
 
-const register = require('./controllers/register');
-const signin = require('./controllers/signin');
-const profile = require('./controllers/profile');
-const image = require('./controllers/image');
+// const register = require('./controllers/register');
+// const signin = require('./controllers/signin');
+// const profile = require('./controllers/profile');
+// const image = require('./controllers/image');
 
 //process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0
 
