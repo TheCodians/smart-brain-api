@@ -6,7 +6,7 @@
 // import register from "./controllers/register.js";
 // import signin from "./controllers/signin.js";
 // import profile from "./controllers/profile.js";
-import image from "./controllers/image.js";
+import {image} from "./controllers/image.js";
 
 const express = require('express');
 const bcrypt = require('bcrypt');
