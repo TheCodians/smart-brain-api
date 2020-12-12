@@ -5,7 +5,7 @@
   "type": "module",
 
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.mjs"
   },
   "keywords": [],
   "author": "",
